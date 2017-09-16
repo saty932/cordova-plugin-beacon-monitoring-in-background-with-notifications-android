@@ -1,0 +1,17 @@
+{
+  "name": "Background-Beacon-Monitoring-master",
+  "version": "0.0.1",
+  "description": "Proximity Beacon background monitoring for android (supporting iBeacons)",
+  "cordova": {
+    "id": "uk.ac.lancaster.library.backgroundbeacons",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "Apache 2.0"
+}
