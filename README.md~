@@ -1,0 +1,18 @@
+# cordova-plugin-beacon-monitoring-in-background-with-notifications-android
+
+This repository is for getting notifications from background when the app is closed in ionic app(Android only).
+
+
+
+This is the plugin is combination of two plugings
+
+https://github.com/lulibrary/Background-Beacon-Monitoring
+https://github.com/petermetz/cordova-plugin-ibeacon
+
+Thanks to the authors both the above plugins using this plugins we have developed this functionality.
+
+
+Step1:
+
+
+
