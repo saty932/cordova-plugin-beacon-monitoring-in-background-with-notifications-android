@@ -83,6 +83,8 @@ resolve(false);
 );
 
 If you have any doubt regarding creation of provider we have added beacon-provided.ts file it's contains the all the methods shown above
+just copy the file beacon-provide.ts into your provides and call the method initialize using beaconprovider so it will start monitoring beacons
+before that make sure you have replaced beacon detailes with your beacons.
 
 
 step2:
