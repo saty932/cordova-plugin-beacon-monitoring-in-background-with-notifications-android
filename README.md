@@ -154,6 +154,7 @@ it should be like
 
 	public String getNotificationContentTitle() {
 		return getString(PREFIX + CAT_NOTIFY + "ContentTitle", "PromoNear");
+	
 	}
 
 	public String getNotificationContentText() {
