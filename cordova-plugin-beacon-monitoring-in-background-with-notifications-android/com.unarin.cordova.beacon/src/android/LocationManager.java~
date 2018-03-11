@@ -17,6 +17,7 @@
        under the License.
 */
        package com.unarin.cordova.beacon;
+
        import android.Manifest;
        import android.annotation.TargetApi;
        import android.app.Activity;
