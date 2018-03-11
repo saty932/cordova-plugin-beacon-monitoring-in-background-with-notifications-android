@@ -14,15 +14,16 @@ Thanks to the authors both the above plugins using this plugins we have develope
 
 
 Step1:
-
+```
 $ ionic cordova plugin add cordova-plugin-ibeacon
 $ npm install --save @ionic-native/ibeacon
+```
 
 Using above commands download the ibeacon plugin
 Add the below code for ibeacon usage in ionic app
 Create one provider and copy the all code shown below
 
-
+```
 import { IBeacon } from '@ionic-native/ibeacon';
 
 constructor(private ibeacon: IBeacon) { }
@@ -51,10 +52,11 @@ data => {
 console.log('didEnterRegion: ', data);
 }
 );
-
+```
 
 Replace the beacon uuid with your beacon uuid and identifier also
 
+```
 let beaconRegion = this.ibeacon.BeaconRegion('deskBeacon','F7826DA6-ASDF-ASDF-8024-BC5B71E0893E');
 //this below methods for didenterregion and didexit regions methods intialization
 
@@ -74,7 +76,7 @@ error => {
 resolve(false);
 }
 );
-
+```
 If you have any doubt regarding creation of provider we have added beacon-provided.ts file it's contains the all the methods shown above
 just copy the file beacon-provide.ts into your provides and call the method initialize using beaconprovider so it will start monitoring beacons
 before that make sure you have replaced beacon detailes with your beacons.
@@ -106,10 +108,12 @@ using the below code we can use this plugin in ionic app
 In you app folder with in app.components.ts file
 After all imports declare the variable defined as below
 
+```
 declare var BackgroundBeaconMonitoring:any;
 
+```
 with in the contoller we are accesing the all methods here
-
+```
 BackgroundBeaconMonitoring.requestPermissions();
 
 //pass whatever the parameters you want as shown below
@@ -123,6 +127,7 @@ console.log("error");
 BackgroundBeaconMonitoring.startMonitoringRegion("deskbeacon","F7826DA6-ASDF-ASDF-8024-BC5B71E0893E",null,null);
 
 BackgroundBeaconMonitoring.startRangingRegion("deskbeacon","F7826DA6-ASDF-ASDF-8024-BC5B71E0893E",null,null);
+```
 
 After doing this this plugin is able to run all the beacons methods even when the app is closed
 
@@ -166,9 +171,9 @@ it should be like
 	}
 
 now type the command 
-
+```
 npm install --save @ionic-native/ibeacon
-
+```
 you will be notified when you enter into the any beacon region 
 
 if you want to notify didexit and didrangebeaconsinregion then again goto LocationManager.java find the methods add the line ShowNotification();
